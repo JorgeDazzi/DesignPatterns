@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'br.dazzi'
+version '1.0.22'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.16'
+}
+
+test {
+    useJUnitPlatform()
+}

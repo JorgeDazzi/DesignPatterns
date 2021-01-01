@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/strategie/build/
+/strategie/build/classes/java/main/
