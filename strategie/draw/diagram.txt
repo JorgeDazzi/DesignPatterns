@@ -1,0 +1,23 @@
+// Cool Class Diagram
+
+
+// Connect
+[Persona] -> [IDisplayBehavior]
+[Persona] -> [IShotBehavior]
+[ConsoleDisplayBehaviorImpl] -.-^ [IDisplayBehavior]
+[CtShotBehaviorImpl] -.-^ [IShotBehavior]
+[TerrorShotBehaviorImpl] -.-^ [IShotBehavior]
+
+// ------------------
+
+[Persona; -iDisplayBehavior: IDisplayBehavior; iShotBehvior: IShotBehavior | +shot()]
+
+[IDisplayBehavior; +display(info: String): void]
+
+[IShotBehavior; -reset: String = "\033[0m"| +shot(): String]
+
+[CtShotBehaviorImpl;  -bg:String = "\u001B[44m" | +shot()]
+
+[TerrorShotBehaviorImpl;  -bg:String = "\u001B[41m" | +shot()]
+
+[ConsoleDisplayBehaviorImpl; +display(info: String)]
