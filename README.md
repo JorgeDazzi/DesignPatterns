@@ -9,4 +9,4 @@ Starting my studies about Design Patterns the most common used in Development in
     
 ## Strategy
 ###### Diagram
-![Strategy Diagram](https://raw.githubusercontent.com/JorgeDazzi/DesignPatterns/a0dea53a85c23643dd4f1947757dbb5ba62bc74d/strategie/draw/diagram.svg)
+![Strategy Diagram](https://raw.githubusercontent.com/JorgeDazzi/DesignPatterns/f0b9bcfceea2979c48819ecaea94758b828eb066/strategie/draw/diagram.svg)
