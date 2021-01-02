@@ -14,10 +14,10 @@
 
 [IDisplayBehavior; +display(info: String): void]
 
-[IShotBehavior; -reset: String = "\033[0m"| +shot(): String]
+[IShotBehavior; +shot(): String]
 
-[CtShotBehaviorImpl;  -bg:String = "\u001B[44m" | +shot()]
+[CtShotBehaviorImpl; +shot()]
 
-[TerrorShotBehaviorImpl;  -bg:String = "\u001B[41m" | +shot()]
+[TerrorShotBehaviorImpl; +shot()]
 
 [ConsoleDisplayBehaviorImpl; +display(info: String)]
